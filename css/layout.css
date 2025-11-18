@@ -3,6 +3,7 @@ body {
 }
 a {
   text-decoration: none;
+  display: block;
 }
 
 .container {
@@ -16,15 +17,31 @@ a {
 .btn {
   background: var(--gradient-color);
   border-radius: 24px;
-  padding: 12px;
+  padding: 1rem 1.25rem;
   color: var(--text-color);
 }
 
+/* 각 섹션 제목 */
+section .title {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 70px;
+}
+section .title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-color);
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+}
 /* 헤더영역 */
 #header {
   width: 100%;
   background: var(--header-bg);
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 999;
 }
@@ -42,14 +59,35 @@ a {
 #header #logo > span {
   color: var(--accent-light-purple);
 }
+.header-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .header-nav .nav-list {
   display: flex;
   gap: 24px;
 }
 .header-nav .nav-list li a {
   color: var(--text-muted);
+  font-size: 1.2rem;
 }
 .header-contact.btn {
   /* border-radius: 16px; */
   padding: 12px 18px;
+}
+.github-nav {
+  width: 30px;
+  height: 30px;
+}
+.github-nav a img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 1120px) {
+  #skills,
+  #projects {
+    height: 100vh;
+  }
 }

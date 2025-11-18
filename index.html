@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/hech.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
   <body>
     <header id="header">
       <div class="header-inner">
-        <h1 id="logo">taehui<span>.portfolio</span></h1>
+        <h1 id="logo">taehui<span>.dev</span></h1>
         <nav class="header-nav">
           <ul class="nav-list">
-            <li><a href="#">Tech Stack</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </nav>
-        <div>
-          <a href="#" aria-label="GitHub"><img src="" alt="github img" /></a>
+        <div class="github-nav">
+          <a href="/crus/dfsf.html" aria-label="GitHub">
+            <img
+              src="/images/github-mark/github-mark-white.png"
+              alt="github img"
+            />
+          </a>
         </div>
         <!-- <a class="header-contact btn" href="#">Contact me</a> -->
       </div>
@@ -32,9 +38,9 @@
         <!-- Hero -->
         <div class="container">
           <div class="hero-text">
-            <p>안녕하세요</p>
+            <p class="hi">안녕하세요</p>
+            <h2>프론트엔드 개발자</h2>
             <h1>..입니다</h1>
-            <h2>개발자</h2>
             <p>설명</p>
             <div class="hero-btns">
               <div class="btn_wrap">
@@ -48,53 +54,165 @@
             </div>
           </div>
           <div class="hero-img">
-            <img src="" alt="" />
+            <img src="/images/github-mark/github-mark-white.png" alt="" />
           </div>
         </div>
       </section>
-      <section id="tech">
-        <!-- Tech Stack -->
+      <section id="skills">
+        <!-- skills Stack -->
         <div class="container">
-          <h2>My Tech Stack</h2>
-          <div class="tech-group">
+          <h2 class="title">My Skills</h2>
+          <div class="skills-group">
             <h3>FRONTEND</h3>
-            <ul class="tech-list">
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
+            <ul class="skills-list">
+              <li>
+                <img src="/images/html_logo.png" alt="" /><span
+                  class="skills-name"
+                  >HTML5</span
+                >
+              </li>
+              <li>
+                <img src="/images/css_logo.png" alt="" /><span
+                  class="skills-name"
+                  >CSS3</span
+                >
+              </li>
+              <li>
+                <img src="/images/js_logo.png" alt="" /><span
+                  class="skills-name"
+                  >JavaScript</span
+                >
+              </li>
+              <li>
+                <img src="/images/react_logo.png" alt="" /><span
+                  class="skills-name"
+                  >React</span
+                >
+              </li>
+              <li>
+                <img src="/images/css_logo.png" alt="" /><span
+                  class="skills-name"
+                  >CSS3</span
+                >
+              </li>
+              <li>
+                <img src="/images/js_logo.png" alt="" /><span
+                  class="skills-name"
+                  >JavaScript</span
+                >
+              </li>
+              <li>
+                <img src="/images/react_logo.png" alt="" /><span
+                  class="skills-name"
+                  >React</span
+                >
+              </li>
             </ul>
           </div>
-          <div class="tech-group">
+          <div class="skills-group">
             <h3>BACKEND</h3>
-            <ul class="tech-list">
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
+            <ul class="skills-list">
+              <li><img src="" alt="" /><span class="skills-name">-</span></li>
+              <li><img src="" alt="" /><span class="skills-name">-</span></li>
+              <li><img src="" alt="" /><span class="skills-name">-</span></li>
+              <li><img src="" alt="" /><span class="skills-name">-</span></li>
             </ul>
           </div>
-          <div class="tech-group">
+          <div class="skills-group">
             <h3>UI Design & Prototyping</h3>
-            <ul class="tech-list">
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
-              <li><img src="" alt="" /><span></span></li>
+            <ul class="skills-list">
+              <li>
+                <img src="/images/figma_logo.png" alt="" /><span
+                  class="skills-name"
+                  >Figma</span
+                >
+              </li>
+              <li>
+                <img src="/images/photoshop_logo.png" alt="" /><span
+                  class="skills-name"
+                  >Photoshop</span
+                >
+              </li>
+              <li>
+                <img src="/images/llustrator_logo.png" alt="" /><span
+                  class="skills-name"
+                  >llustrator</span
+                >
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- Projects -->
       <section id="projects">
-        <!-- Projects -->
+        <div class="container">
+          <h2 class="title">Projects</h2>
+          <div class="projects">
+            <ul class="project-list">
+              <li class="project-item">
+                <div class="screen-wrap">
+                  <!-- 뒤에서 움직일 웹페이지 이미지 -->
+                  <img class="screen-content" src="/images/h&m.png" alt="" />
+
+                  <!-- 투명배경 모니터 PNG -->
+                  <img
+                    class="screen-frame"
+                    src="/images/desktop-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">프로젝트 이름1</h3>
+                  <p class="project-description">프로젝트 설명</p>
+                </div>
+              </li>
+              <li class="project-item">
+                <div class="screen-wrap">
+                  <!-- 뒤에서 움직일 웹페이지 이미지 -->
+                  <img class="screen-content" src="/images/레더리.png" alt="" />
+
+                  <!-- 투명배경 모니터 PNG -->
+                  <img
+                    class="screen-frame"
+                    src="/images/desktop-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">프로젝트 이름1</h3>
+                  <p class="project-description">프로젝트 설명</p>
+                </div>
+              </li>
+              <li class="project-item">
+                <div class="screen-wrap">
+                  <!-- 뒤에서 움직일 웹페이지 이미지 -->
+                  <img class="screen-content" src="/images/mini.png" alt="" />
+
+                  <!-- 투명배경 모니터 PNG -->
+                  <img
+                    class="screen-frame"
+                    src="/images/desktop-img.png"
+                    alt=""
+                  />
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">프로젝트 이름1</h3>
+                  <p class="project-description">프로젝트 설명</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="about">
+        <div class="container"></div>
         <!-- About -->
       </section>
 
       <section id="contact">
+        <div class="container"></div>
         <!-- Contact -->
       </section>
     </main>

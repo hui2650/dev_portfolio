@@ -1,0 +1,42 @@
+/* 프로젝트 */
+#projects {
+  display: flex;
+  align-items: center;
+}
+.project-list {
+  display: flex;
+  gap: 32px;
+}
+.project-list > .project-item {
+  display: flex;
+  flex-direction: column;
+}
+.screen-wrap {
+  position: relative;
+  width: 100%;
+  min-width: 500px; /* 모니터 크기 */
+  height: 291.7px; /* 모니터 안 화면 크기 */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* 뒤에 들어가는 웹사이트 이미지 */
+.screen-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  transform: translateY(0);
+  transition: transform 6s ease-in-out; /* 스크롤 속도 */
+}
+
+/* 앞에 덮는 모니터 PNG */
+.screen-frame {
+  position: relative;
+  width: 100%;
+}
+
+.screen-wrap:hover .screen-content {
+  transform: translateY(-60%); /* 이미지 길이에 따라 조절 */
+}

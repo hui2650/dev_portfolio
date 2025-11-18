@@ -1,0 +1,37 @@
+/* 스킬 */
+#skills {
+  display: flex;
+  align-items: center;
+}
+.skills-group > h3 {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
+  gap: 12px;
+  margin-bottom: 55px;
+}
+.skills-group .skills-list li {
+  background: var(--surface-color);
+  border: 1px solid rgb(26, 26, 26);
+  padding: 16px 24px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.skills-group .skills-list li:hover {
+  box-shadow: 2px 2px 16px rgb(82, 82, 82, 0.5);
+}
+.skills-group .skills-list li img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  overflow: visible;
+}
+.skills-list .skills-name {
+  color: var(--text-muted);
+}
