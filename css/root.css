@@ -1,0 +1,33 @@
+:root {
+  --container-width: 1120px;
+  --container-padding: 24px;
+
+  /* Background */
+  --bg-color: #181d34;
+  --surface-color: #221c4a; /* 배경보다 10% 밝은 서피스 */
+  --header-bg: #141826;
+  --border-color: #462f5b;
+
+  /* Text */
+  --text-color: #f5f5fa;
+  --text-muted: #b6b6c9;
+
+  /* Accent Colors */
+  --accent-purple: #7a0bc0;
+  --accent-blue: #270082;
+  --accent-pink: #fa58b6;
+
+  /* Generated Colors */
+  --accent-light-purple: #b85cff;
+  --accent-mid-purple: #4a14a8;
+
+  /* gradient */
+  --gradient-color: linear-gradient(
+    90deg,
+    #7348a8 0%,
+    #7a4aaf 25%,
+    #864db3 50%,
+    #8f4eb7 75%,
+    #9850b7 100%
+  );
+}

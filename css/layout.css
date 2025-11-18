@@ -1,0 +1,55 @@
+body {
+  background: var(--bg-color);
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* 버튼 스타일 */
+.btn {
+  background: var(--gradient-color);
+  border-radius: 24px;
+  padding: 12px;
+  color: var(--text-color);
+}
+
+/* 헤더영역 */
+#header {
+  width: 100%;
+  background: var(--header-bg);
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+#header .header-inner {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--container-padding);
+}
+#header #logo {
+  color: var(--text-color);
+  font-size: 24px;
+}
+#header #logo > span {
+  color: var(--accent-light-purple);
+}
+.header-nav .nav-list {
+  display: flex;
+  gap: 24px;
+}
+.header-nav .nav-list li a {
+  color: var(--text-muted);
+}
+.header-contact.btn {
+  /* border-radius: 16px; */
+  padding: 12px 18px;
+}
