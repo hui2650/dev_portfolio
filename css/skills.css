@@ -29,8 +29,7 @@
 .skills-group .skills-list li img {
   width: 30px;
   height: 30px;
-  object-fit: cover;
-  overflow: visible;
+  object-fit: contain;
 }
 .skills-list .skills-name {
   color: var(--text-muted);

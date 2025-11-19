@@ -3,24 +3,59 @@
   display: flex;
   align-items: center;
 }
+.projects {
+  width: 100%;
+}
 .project-list {
   display: flex;
   gap: 32px;
 }
 .project-list > .project-item {
+  flex-shrink: 0;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  background: var(--surface-color);
+  border-radius: 16px;
+  border: 1px solid rgb(26, 26, 26);
 }
-.screen-wrap {
+.project-list > .project-item:hover {
+  box-shadow: 2px 2px 24px rgb(82, 82, 82, 0.5);
+}
+.project-item > .project-img {
+  width: 100%;
+}
+.project-item > .project-img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.project-item > .project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+}
+.project-content > .project-title,
+.project-content > .project-description {
+  color: var(--text-color);
+}
+.project-content > .project-title {
+  font-size: 1.25rem;
+}
+.project-description {
+  font-size: 1rem;
+}
+/* .screen-wrap {
   position: relative;
   width: 100%;
-  min-width: 500px; /* 모니터 크기 */
-  height: 291.7px; /* 모니터 안 화면 크기 */
+  min-width: 500px; 
+  height: 291.7px; 
   overflow: hidden;
   border-radius: 8px;
 }
-
-/* 뒤에 들어가는 웹사이트 이미지 */
 .screen-content {
   position: absolute;
   top: 0;
@@ -28,15 +63,12 @@
   width: 100%;
   object-fit: cover;
   transform: translateY(0);
-  transition: transform 6s ease-in-out; /* 스크롤 속도 */
+  transition: transform 6s ease-in-out; 
 }
-
-/* 앞에 덮는 모니터 PNG */
 .screen-frame {
   position: relative;
   width: 100%;
 }
-
 .screen-wrap:hover .screen-content {
   transform: translateY(-60%); /* 이미지 길이에 따라 조절 */
-}
+/* } */
